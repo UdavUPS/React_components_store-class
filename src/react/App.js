@@ -1,9 +1,11 @@
 /* import logo from './logo.svg';*/
 /* import '../css/style.css';  */
-import { ShopItemFunc } from './components.jsx';
+import { ShopItemClass } from './components.jsx';
 import { item } from './object.js';
 
+/* const ShopItem = new ShopItemClass();
 
+console.log(ShopItemClass); */
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
       <div className='highlight-overlay'></div>
     </div>
     <div className="window">
-      <ShopItemFunc {...item} />
+      <ShopItemClass { ...item }/>
     </div>
   </div>
   );
